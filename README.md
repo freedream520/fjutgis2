@@ -93,7 +93,6 @@
 | client->	|  				| ->server  	|
 | client<-      | `type|cmd|data`     		| <-server	|
 |	        |		      		|      		|  
-
 | client<-      | `type|cmd|data`     		| <-server	|
 |	        |		      		|      		|
 | client->	|  				| ->server  	|
