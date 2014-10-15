@@ -87,10 +87,10 @@
 
 | Tables        | Are           	| Cool  	|
 | ------------- |:--------------------:	| ------------:	|
-| client send   | type|cmd|data 	| server rec 	|
-| client rec    | type|cmd|data     	| server send	|
+| client send   | `type|cmd|data` 	| server rec 	|
+| client rec    | `type|cmd|data`     	| server send	|
 	        		      	|      		|
-| client send   | type|cmd|data 	| server rec 	|
-| client rec    | type|cmd|data     	| server send	|
+| client send   | `type|cmd|data`	| server rec 	|
+| client rec    | `type|cmd|data`     	| server send	|
 
 
