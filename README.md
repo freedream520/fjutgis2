@@ -85,12 +85,23 @@
 
 
 
-| Tables        | Are           	| Cool  	|
-| ------------- |:--------------------:	| ------------:	|
-| client send   | `type|cmd|data` 	| server rec 	|
-| client rec    | `type|cmd|data`     	| server send	|
-	        		      	|      		|
-| client send   | `type|cmd|data`	| server rec 	|
-| client rec    | `type|cmd|data`     	| server send	|
+| Tables        | `type|cmd|data`           	| Cool  	|
+| ------------- |:----------------------------:	| ------------:	|
+| client->	|  				| ->server  	|
+| client<-      | `type|cmd|data`     		| <-server	|
+|	        |		      		|      		|
+| client->	|  				| ->server  	|
+| client<-      | `type|cmd|data`     		| <-server	|
+|	        |		      		|      		|  
 
+| client<-      | `type|cmd|data`     		| <-server	|
+|	        |		      		|      		|
+| client->	|  				| ->server  	|
+| client<-      | `type|cmd|data`     		| <-server	|
+|	        |		      		|      		|  
+| client<-      | `type|cmd|data`     		| <-server	|
+|	        |		      		|      		|
+| client->	|  				| ->server  	|
+| client<-      | `type|cmd|data`     		| <-server	|
+|	        |		      		|      		|  
 
