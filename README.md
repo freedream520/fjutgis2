@@ -85,10 +85,12 @@
 
 
 
+| Tables        | Are           	| Cool  	|
+| ------------- |:--------------------:	| ------------:	|
+| client send   | type|cmd|data 	| server rec 	|
+| client rec    | type|cmd|data     	| server send	|
+	        		      	|      		|
+| client send   | type|cmd|data 	| server rec 	|
+| client rec    | type|cmd|data     	| server send	|
 
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
