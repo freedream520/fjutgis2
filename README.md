@@ -34,39 +34,52 @@
         * 矢量数据：`C:\arcgisserver\arcgisinput\zhj新增NEW_Export_Output.shp`
         * 数据配置文件：`210.34.192.130|C:\arcgisserver\arcgisinput\zhj新增\zhj.mxd`
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/zhjnew/MapServer>
+        
     * ####道路震动数据
+    
         * 数据来源：郑鸿杰 刘林
         * 矢量数据：`C:\arcgisserver\arcgisinput\破损道路\`
         * 数据配置文件：`C:\arcgisserver\arcgisinput\破损道路\破损道路.mxd`
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/damage/MapServer/>
         
     * ####北京浮动车数据
+    
         * 数据来源：邹老师
         * 矢量数据：`C:\arcgisserver\arcgisinput\beijing\`
         * 数据配置文件：`C:\arcgisserver\arcgisinput\beijing\beijing.mxd`
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/beijing/MapServer/>
+        
     * ####2015城运会重要poi
+    
         * 数据来源：郑鸿杰
         * 矢量数据：`C:\arcgisserver\arcgisinput\zhj\poiNew`
         * 数据配置文件：`C:\arcgisserver\arcgisinput\zhj\zhjpoi.mxd`
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/zhjpoi/MapServer/>
+        
     * ####高德地图数据2014
+    
         * 数据涟源：徐翔
         * 矢量数据：`C:\arcgisserver\arcgisinput\zhj新增`
         * 数据配置文件：`C:\arcgisserver\arcgisinput\zhj新增\zhj.mxd`
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/zhj/MapServer>
+        
     * ####实时浮动车数据
+    
         * 数据来源：udp2txt转发器udp转发
         * 启动接收：`python C:\arcgisserver\arcgisinput\car.py`
         * 矢量数据：`z:\carPoi.shp`(z盘为内存盘)
         * 数据配置文件：`C:\arcgisserver\arcgisinput\car.mxd`
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/carPoi2/MapServer/>
+        
     * ####福州旧版地图数据
+    
         * 数据来源：最早购买的福州地图数据
         * 矢量数据：
         * 数据配置文件：
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/oldfuzhou/MapServer>
+        
     * ####实时路况数据
+    
         * 数据来源：
             * udp2txt转发器udp转发,每隔10分钟生成数据： 
                 * 启动接收：`python C:\Documents and Settings\Administrator\桌面\cpq\newlukuang\carDataRec\car4condition.py`
@@ -80,18 +93,25 @@
         * 矢量数据：`C:\arcgisserver\arcgisinput\test\line.shp`
         * 数据配置文件：`C:\arcgisserver\arcgisinput\level.mxd`
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/level/MapServer>
+        
     * ####其他
+    
         * argis server 使用 mxd文件来发布服务。最终的服务通过端口映射提供为flexviewer服务以便增加前端灵活性。
         * 重启相应的地图服务后应该先清除缓存，缓存管理地址：<http://210.34.192.130:8399/arcgis/rest/admin/> 账号密码与操作系统一致。登录后点击`clear cache options`,再点击`clear cache Now`即可完成清除缓存。
         * 有时候地图服务不可以用，进入系统服务，从其som，soc服务。
+        
 * ###python后端数据接口开发###
+
     * ####模块相关 
+    
         * ######车翼行全球眼
+        
             *  flexviewer post 
             *  由视频播放列表生成使用vlc控件的自动播放网页。
             *  生成脚本`python globalEye2\nameLocUrl2html\nameLocUrl2htmlactivex.py`
         
         * ######部分历史数据
+        
             *  提取工具：`210.34.192.119/data4/gpsdata/2014/04filefilter.class`
             *  提取方法示例：`java -classpath . filefilter /data4/gpsdata/2014/04/20140401.txt ./zfm/20140401.txt -g 26.083,119.274-26.049,119.324 -c 41`
             *  `/data4/gpsdata/2014/04/20140401.txt`:原始二进制文件路径
@@ -100,13 +120,17 @@
             *  `-c 41`：车辆类型为11
     
         * ######路径规划
+        
             * gemfire路径规划
                 * 现已停止而且准备由灵云智请的广州团队，在开发完gemfire路况计算后开始开发。
             * google api路径规划
                 * 
     * #####与flexviewer通信协议
+    
         * ######通信接口`http://gis2.fjut.edu.cn:8888/fjutgis`
+        
         * ######flexviewer自身安全机制要求web通信时服务端放置跨域文件。由于我们使用bottle自带轻量web服务器所以这里使用get方法提供该跨域文件。
+        
             * 代码位置：httpserver.py         
             ```
                 @get('/crossdomain.xml')
@@ -116,7 +140,9 @@
                 	+"</cross-domain-policy>";
                 	return xml
             ```
+            
         * ######通信示例，这里用curl模拟flexviewer的post操作
+        
             * history协议
                 * 日期请求
                 ```
@@ -158,39 +184,50 @@
 * ###flexview前端开发###
 widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项目中的目录为`fjlexviewer-2.3-src\srcwidgets\fjutgis\`，以下插件位置都位于该目录。
 插件有与python数据通信接口通信的话都通过<http://210.34.192.119:8888/fjutgis>通信，所用插件共用一个接口地址配置文件`fjutgis\config\config.xml`
+
     * ###各模块详细说明
+    
 		* ####GlobalEye 模块
+		
             * 插件名称`GlobalEye2` 
             * 功能：向python数据接口索取全球眼页面地址。全球眼页面需放到web服务器。
             * 协议：使用一下格式将数据post到http://210.34.192.119:8888/fjutgis
 
         * ####history 车辆历史轨迹播放模块
+        
             * 插件名称`History`
             * 功能：向python数据接口索取指定车辆某一天数据进行播放
             * 协议：使用一下格式将数据post到http://210.34.192.119:8888/fjutgis
+            
         * ####routing 路径规划模块
+        
             * 插件名称`routing`
             * 功能：分别使用google与fjut两种方式进行路径规划
                 * google  
                 接口<https://developers.google.com/maps/documentation/directions/>这段时间google服务比较难访问。
                 * fjut  
                 向gemfire索取结果，这一块等灵云智请的广州开发团队开发完毕可以重新开始使用。
+                
         * ####实时车辆数据
+        
             * 插件名称`realCar2`
             * 功能：点击realCar2按钮后加载arcgis server发布的实时车辆图层并定时刷新。
             * 车辆实时图层地址：<http://210.34.192.119:8399/arcgis/rest/services/carPoi2/MapServe>
             
         * ####beijing浮动车数据
+        
             * 插件名称`beijing`
             * 功能：点击beijing按钮后加载arcgis server发布的beijing浮动车图层。
             * 北京浮动车图层地址：<http://210.34.192.119:8399/arcgis/rest/services/beijing/MapServer/>
             
         * ####道路维护状态数据
+        
             * 插件名称`damage`
             * 功能：点击realCar2按钮后加载arcgis server发布的实时车辆图层并定时刷新。
             * 道路维护状态图层地址：<http://210.34.192.119:8399/arcgis/rest/services/damage/MapServer/>
                                     
         * ####插件全局配置
+        
             * 配置文件：`flexviewer-2.3-src/src/config.xml`
             * 配置的位置
                 ```
@@ -206,8 +243,11 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
                 </widgetcontainer>
                 ```
     * ####图层配置
+    
     这里的图层服务地址都经过210.34.192.119的端口映射，配置文件位于：`flexviewer-2.3-src/src/config.xml`
+    
         * ######Portable Basemap Server(只能静态图层服务)
+        
             * 静态图层
                 * google satelite
                     ```
@@ -219,6 +259,7 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
                 url="http://210.34.192.119:7080/PBS/rest/services/GoogleMapsRoad/MapServer"/>
                     ```
         * #####arcgis server
+        
             * 动态图层
                 *  oldMap
                     ```
