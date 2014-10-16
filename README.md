@@ -85,22 +85,14 @@
 
 
 
-| Tables        | `type|cmd|data`           	| Cool  	|
-| ------------- |:----------------------------:	| :------------:|
-| client->	|  				| ->server  	|
-| client<-      | `type|cmd|data`     		| <-server	|
-|	        |		      		|      		|
-| client->	|  				| ->server  	|
-| client<-      | `type|cmd|data`     		| <-server	|
-|	        |		      		|      		|  
-| client<-      | `type|cmd|data`     		| <-server	|
-|	        |		      		|      		|
-| client->	|  				| ->server  	|
-| client<-      | `type|cmd|data`     		| <-server	|
-|	        |		      		|      		|  
-| client<-      | `type|cmd|data`     		| <-server	|
-|	        |		      		|      		|
-| client->	|  				| ->server  	|
-| client<-      | `type|cmd|data`     		| <-server	|
-|	        |		      		|      		|  
+history
+    client                                      `type|cmd|data`                                     server  
+    获取时间列表                    ->          `history|getDateDir:null`                 ->  
+    接收时间列表                    <-          history|getDateDir:dateDir1 dateDir2    <-  
+    根据时间获取车辆类型            ->          history|getCarType:dateDir              -      
+    获取时间列表下的车辆类型        <-          history|getCarType:CarType1 CarType2    <-  
+    根据时间和类型获取车辆列表      ->          history|getMdid:dateDir CarType         ->  
+    接收车辆列表                    <-          history|getMdid:mdid1 mdid2             <-  
+    根据时间车辆类型车辆获取车辆轨迹->          history|getTrack:dateDir cartype mdid   ->  
+    接收车辆轨迹                    <-          history|getTrack:lat,lng lat1,lng1      <-  
 
