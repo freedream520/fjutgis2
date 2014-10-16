@@ -15,16 +15,21 @@
 * ###Portable Basemap Server配置###
 
     * ####该服务器用来为gis2提供免费的地图底图支持，如gis2用到的
+    
         *  Google Satellite
         *  autonavi(其实是google map)
+
     * ####服务端于`210.34.192.130|C:\Documents and Settings\Administrator\桌面\cpq\Portable Basemap Server v2.0.7`
+    
         * 启动：`PortableBasemapServer.exe`
 		* 配置文件：`CustomOnlineMaps.xml`已经配置了大量的免费地图服务包含gis2所用到的两个。
         * portable Basemap Server官网及具体使用说明：<http://geopbs.codeplex.com/>
         * 最终的服务通过端口映射提供为flexviewer服务以便增加前端灵活性。
 
 * ###相关矢量数据生成及arcgis server服务发布  ###
+
 	* ####新增道路分析
+
         * 数据来源：郑鸿杰
         * 矢量数据：`C:\arcgisserver\arcgisinput\zhj新增NEW_Export_Output.shp`
         * 数据配置文件：`210.34.192.130|C:\arcgisserver\arcgisinput\zhj新增\zhj.mxd`
