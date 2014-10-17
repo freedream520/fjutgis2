@@ -246,10 +246,11 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
     * ####图层配置
     
     这里的图层服务地址都经过210.34.192.119的端口映射，配置文件位于：`flexviewer-2.3-src/src/config.xml`
-    
+
         * ######Portable Basemap Server(只能静态图层服务)
-        
+
             * 静态图层
+
                 * google satelite
                     ```
                     <layer label="Google Satellite" type="tiled" visible="false" url="http://210.34.192.119:7080/PBS/rest/services/GoogleMapsImagery/MapServer"/>
@@ -259,6 +260,7 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
                     <layer label="autonavi" id="autonavi"  type="tiled" visible="true"
                 url="http://210.34.192.119:7080/PBS/rest/services/GoogleMapsRoad/MapServer"/>
                     ```
+
         * #####arcgis server
         
             * 动态图层
