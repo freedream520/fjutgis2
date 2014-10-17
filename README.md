@@ -125,7 +125,7 @@
                 * 现已停止而且准备由灵云智请的广州团队，在开发完gemfire路况计算后开始开发。
             * google api路径规划
                 * 
-    * #####与flexviewer通信协议
+    * ####与flexviewer通信协议
     
         * ######通信接口`http://gis2.fjut.edu.cn:8888/fjutgis`
         
