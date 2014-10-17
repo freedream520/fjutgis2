@@ -266,35 +266,35 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
 
 	* #####arcgis server
         
-            * 动态图层
+            	* 动态图层
             
-                *  oldMap
-                
-                    ```
-                    <layer label="oldMap" id="oldMap" type="dynamic" visible="false"
-                url="http://210.34.192.119:8399/arcgis/rest/services/oldfuzhou/MapServer"/>
-                    ```
+	                *  oldMap
+	                
+	                    ```
+	                    <layer label="oldMap" id="oldMap" type="dynamic" visible="false"
+	                url="http://210.34.192.119:8399/arcgis/rest/services/oldfuzhou/MapServer"/>
+                    		```
                     
-                * navinfo
-                
-                    ```
-                    <layer label="navinfo" id="swtx" type="dynamic" visible="false"
-                url="http://210.34.192.119:8399/arcgis/rest/services/zhj/MapServer"/>
-                    ```
-                    
-                * new road for navinfo(新增道路图层)
-                
-                    ```
-                    <layer label="new road for navinfo" type="dynamic" visible="false"
-                url="http://210.34.192.119:8399/arcgis/rest/services/zhjnew/MapServer"/>
-                    ```
-                    
-                * road condition
-                
-                    ```
-                    <layer label="road condition" type="dynamic" visible="false"
-                url="http://210.34.192.119:8399/arcgis/rest/services/level/MapServer"/>
-                    ```
+	                * navinfo
+	                
+	                    ```
+	                    <layer label="navinfo" id="swtx" type="dynamic" visible="false"
+	                url="http://210.34.192.119:8399/arcgis/rest/services/zhj/MapServer"/>
+	                    ```
+	                    
+	                * new road for navinfo(新增道路图层)
+	                
+	                    ```
+	                    <layer label="new road for navinfo" type="dynamic" visible="false"
+	                url="http://210.34.192.119:8399/arcgis/rest/services/zhjnew/MapServer"/>
+	                    ```
+	                    
+	                * road condition
+	                
+	                    ```
+	                    <layer label="road condition" type="dynamic" visible="false"
+	                url="http://210.34.192.119:8399/arcgis/rest/services/level/MapServer"/>
+	                    ```
     
     * ####系统账号密码管理
     
