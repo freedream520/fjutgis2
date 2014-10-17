@@ -264,7 +264,7 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
                 url="http://210.34.192.119:7080/PBS/rest/services/GoogleMapsRoad/MapServer"/>
                     ```
 
-       * #####arcgis server
+	* #####arcgis server
         
             * 动态图层
             
