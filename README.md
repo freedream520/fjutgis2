@@ -242,7 +242,6 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
                             ······
                 </widgetcontainer>
                 ```
-
     * ####图层配置
     
     这里的图层服务地址都经过210.34.192.119的端口映射，配置文件位于：`flexviewer-2.3-src/src/config.xml`
