@@ -88,7 +88,7 @@
     * ####新增道路分析
 
         * 数据来源：郑鸿杰
-        * 矢量数据：`C:\arcgisserver\arcgisinput\zhj新增NEW_Export_Output.shp`
+        * 矢量数据：`C:\arcgisserver\arcgisinput\zhj新增\NEW_Export_Output.shp`
         * 数据配置文件：`210.34.192.130|C:\arcgisserver\arcgisinput\zhj新增\zhj.mxd`
         * 服务地址：<http://210.34.192.119:8399/arcgis/rest/services/zhjnew/MapServer>
         
