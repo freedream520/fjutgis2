@@ -61,6 +61,8 @@
 
 * ###启动apache
 
+    * 上传flexviewer工程`flexviewer-2.3-src\bin-debug`目录下所有文件到210.34.192.119的web根目录
+    
 * ###启动gemfire路径规划
 
     * 待开发 
