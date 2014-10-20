@@ -15,21 +15,44 @@
 
 * ###配置并启动tcp2udp
 
-    
+    * 见gps收发文档
     
 * ###配置并启动udp2txt
 
+    * 配置文件`210.34.192.119：/root/udp2txt/ip_sendto.conf`
+    ```
+    210.34.192.130 2500 #给实时fcd图层使用
+    210.34.192.130 2501 #给路况计算使用
+    ```
     * 分别向实时fcd图层数据接收程序和实时路况数据接收程序发送
+
+* ###启动实时fcd图层数据接收程序
+
+    * 目录：`210.34.192.130：C:\Documents and Settings\Administrator\桌面\cpq\allservice\realtimeFCDrev`
+    * 启动：`python main.py`
+    
+* ###启动实时路况数据源程序
+
+    * 目录:`C:\Documents and Settings\Administrator\桌面\cpq\allservice\carDataRev4roadCondition`
+    * 启动：`python main.py`
+    
+* ###启动路况计算主程序
+
+    * 目录：`C:\Documents and Settings\Administrator\桌面\cpq\allservice\roadCondition`
+    * 启动：`python main.py`
     
 * ###配置并启动端口映射端 rinetd
 
-    * 目录/root/cpq/port2inner/rinetd
-    * 配置文件`config.file`
+    * 目录:`/root/cpq/port2inner/rinetd`
+    * 配置文件:`config.file`
+    ```
+    210.34.192.119 8399 210.34.192.130 8399 #arcgis rest service 地址映射
+    210.34.192.119 7080 210.34.192.130 7080 #portable basemap server rest地址映射
+    ```
     * 启动：`rinetd -c config.file`
+    * flexviewer前端服务所有相关服务地址均配置210.34.192.119为服务地址
     
-* ###启动实时fcd图层数据接收程序
 
-* ###启动实时路况数据源程序
 
 * ###启动python数据接口
 
@@ -330,3 +353,4 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
     
         *  账号密码目前写死在`src/(default/index.mxml)`根据需要修改这个文件的代码即可。
         
+
