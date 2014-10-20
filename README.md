@@ -33,17 +33,17 @@
     
 * ###启动实时路况数据源程序
 
-    * 目录:`C:\Documents and Settings\Administrator\桌面\cpq\allservice\carDataRev4roadCondition`
+    * 目录:`210.34.192.130：C:\Documents and Settings\Administrator\桌面\cpq\allservice\carDataRev4roadCondition`
     * 启动：`python main.py`
     
 * ###启动路况计算主程序
 
-    * 目录：`C:\Documents and Settings\Administrator\桌面\cpq\allservice\roadCondition`
+    * 目录：`210.34.192.130：C:\Documents and Settings\Administrator\桌面\cpq\allservice\roadCondition`
     * 启动：`python main.py`
     
 * ###配置并启动端口映射端 rinetd
 
-    * 目录:`/root/cpq/port2inner/rinetd`
+    * 目录:`210.34.192.119：/root/cpq/port2inner/rinetd`
     * 配置文件:`config.file`
     ```
     210.34.192.119 8399 210.34.192.130 8399 #arcgis rest service 地址映射
@@ -60,6 +60,7 @@
     * 启动:`./start.sh`
 
 * ###启动apache
+
 * ###启动gemfire路径规划
 
     * 待开发 
@@ -76,7 +77,7 @@
     * ####服务端于`210.34.192.130|C:\Documents and Settings\Administrator\桌面\cpq\Portable Basemap Server v2.0.7`
     
         * 启动：`PortableBasemapServer.exe`
-    	* 配置文件：`CustomOnlineMaps.xml`已经配置了大量的免费地图服务包含gis2所用到的两个。
+        * 配置文件：`CustomOnlineMaps.xml`已经配置了大量的免费地图服务包含gis2所用到的两个。
         * portable Basemap Server官网及具体使用说明：<http://geopbs.codeplex.com/>
         * 最终的服务通过端口映射提供为flexviewer服务以便增加前端灵活性。
 
