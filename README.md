@@ -310,16 +310,16 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
 
 			* google satelite
                 
-                    ```
+                ```
                     <layer label="Google Satellite" type="tiled" visible="false" url="http://210.34.192.119:7080/PBS/rest/services/GoogleMapsImagery/MapServer"/>
-                    ```
+                ```
                     
            * autonavi(其实是google map)
                 
-                    ```
+                ```
                     <layer label="autonavi" id="autonavi"  type="tiled" visible="true"
                 url="http://210.34.192.119:7080/PBS/rest/services/GoogleMapsRoad/MapServer"/>
-                    ```
+                ```
 
 	* #####arcgis server
         
@@ -327,7 +327,7 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
             
 			*  oldMap
 	                
-	           ```
+	            ```
 	                    <layer label="oldMap" id="oldMap" type="dynamic" visible="false"
 	                url="http://210.34.192.119:8399/arcgis/rest/services/oldfuzhou/MapServer"/>
                 ```
@@ -336,21 +336,21 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
 	           ```
 	                    <layer label="navinfo" id="swtx" type="dynamic" visible="false"
 	                url="http://210.34.192.119:8399/arcgis/rest/services/zhj/MapServer"/>
-	            ```
+	           ```
 	                    
 			* new road for navinfo(新增道路图层)
 	                
-	            ```
+	           ```
 	                    <layer label="new road for navinfo" type="dynamic" visible="false"
 	                url="http://210.34.192.119:8399/arcgis/rest/services/zhjnew/MapServer"/>
-	                    ```
+	           ```
 	                    
 			* road condition
 	                
 	           ```
 	                    <layer label="road condition" type="dynamic" visible="false"
 	                url="http://210.34.192.119:8399/arcgis/rest/services/level/MapServer"/>
-	                    ```
+	           ```
     
     * ####系统账号密码管理
     
