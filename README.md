@@ -85,7 +85,7 @@
 
 * ###相关矢量数据生成及arcgis server服务发布  ###
 
-	* ####新增道路分析
+    * ####新增道路分析
 
         * 数据来源：郑鸿杰
         * 矢量数据：`C:\arcgisserver\arcgisinput\zhj新增NEW_Export_Output.shp`
@@ -327,27 +327,27 @@ widget插件开发，即顶部导航条的横栏按钮。fjutgis2 widget在项�
             
 			*  oldMap
 	                
-	                    ```
+	           ```
 	                    <layer label="oldMap" id="oldMap" type="dynamic" visible="false"
 	                url="http://210.34.192.119:8399/arcgis/rest/services/oldfuzhou/MapServer"/>
-                    		```
+                ```
 			* navinfo
 	                
-	                    ```
+	           ```
 	                    <layer label="navinfo" id="swtx" type="dynamic" visible="false"
 	                url="http://210.34.192.119:8399/arcgis/rest/services/zhj/MapServer"/>
-	                    ```
+	            ```
 	                    
 			* new road for navinfo(新增道路图层)
 	                
-	                    ```
+	            ```
 	                    <layer label="new road for navinfo" type="dynamic" visible="false"
 	                url="http://210.34.192.119:8399/arcgis/rest/services/zhjnew/MapServer"/>
 	                    ```
 	                    
 			* road condition
 	                
-	                    ```
+	           ```
 	                    <layer label="road condition" type="dynamic" visible="false"
 	                url="http://210.34.192.119:8399/arcgis/rest/services/level/MapServer"/>
 	                    ```
